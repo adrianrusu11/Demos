@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tema Forms</title>
+    <style>
+    tfoot{
+      background-color: orange;
+    }
+
+    table, td{
+      border-collapse: collapse;
+      border: 1px solid black;
+      padding: 5px;
+    }
+      #phoneLabel{
+        word-wrap: normal;
+      }
+      #prefix{
+        width: 15px;
+      }
+      #telUnu{
+        width: 25px;
+      }
+      #telDoi{
+        width:70px;
+      }
+      #state{
+        width: 40px;
+      }
+      .birth{
+        width: 50px;
+        padding: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form>
+    <table>
+      <tbody>
+        <tr>
+          <td><strong>First Name</strong></td>
+          <td colspan="3"><input type="text" name="fname" /></td>
+        </tr>
+        <tr>
+          <td><strong>Last Name</strong></td>
+          <td colspan="3"><input type="text" name="lname" /></td>
+        </tr>
+        <tr>
+          <td><strong>Address</strong></td>
+          <td colspan="3"><textarea cols="33" rows="3"></textarea></td>
+        </tr>
+        <tr>
+          <td><strong>City</strong></td>
+          <td><input type="text" name="city" /></td>
+          <td><strong>State</strong></td>
+          <td><input type="text" name="state" id="state"/></td>
+        </tr>
+        <tr>
+          <td><strong>Zip/Postal Code</strong></td>
+          <td colspan="3"><input type="text" name="zipCode"></td>
+        </tr>
+        <tr>
+          <td><strong>Country<strong></td>
+          <td colspan="3">
+            <select>
+              <option value="bulgaria">Bulgaria</option>
+              <option value="romania">Romania</option>
+              <option value="rusia">Rusia</option>
+              <option value="franta">Franta</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td id="phoneLabel"><strong>Phone (country code,<br /> area code, number)</strong></td>
+          <td colspan="3">(+<input type="text" name="phone" id="prefix" />)<input type="text" name="phone" id="telUnu" />-<input type="text" name="phone" id="telDoi" /></td>
+        </tr>
+        <tr>
+          <td><strong>E-mail</strong></td>
+          <td colspan="3"><input type="email" name="email" placeholder="test@gmail.com"></td>
+        </tr>
+        <tr>
+          <td><strong>Birth Date</strong></td>
+          <td colspan="3">Month
+            <input type="number" name="birth" class="birth" maxlength="2" placeholder="01">
+            Day
+            <input type="number" name="birthDay" class="birth" maxlength="2" placeholder="01">Year (4 digit)
+            <input type="number" name="birthYear" class="birth" maxlength="4" placeholder="1990">
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Gender</strong></td>
+          <td colspan="3">
+            <select>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Starting Date</strong></td>
+          <td colspan="3"><input type="radio" name="startingDate" value="spring2006" />Spring 2006<input  type="radio" name="startingDate" value="summer2006" />Summer 2006</td>
+        </tr>
+        <tr>
+        <td><strong>Comments/Questions</strong></td>
+        <td colspan="3"><textarea cols="33" rows="6"></textarea></td>
+        </tr>
+
+      </tbody>
+    <tfoot>
+      <tr>
+        <td align="center" colspan="4"><button type="button" align="center">Submit</button><input type="reset" value="Clear This Form" /></td>
+      </tr>
+    </tfoot>
+    </table>
+    </form>
+  </body>
+</html>

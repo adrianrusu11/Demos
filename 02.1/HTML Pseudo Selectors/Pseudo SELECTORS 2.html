@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        header nav ul
+        {
+            list-style-type: none;
+        }
+        header nav ul li a {
+            text-decoration: none;
+        }
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+        section article header h1:before{
+            content: " << "
+        }
+        section article header h1:after{
+            content: " >> "
+        }
+        section article p:first-letter {
+            font-size:1.7em;
+            font-family: "Old English Text MT";
+        }
+        section article p:first-line{
+            color:blue;
+            background-color: lightblue;
+        }
+        header nav ul{
+            float: left;
+            padding-right: 20px;
+        }
+        header nav ul li{
+            padding-bottom: 4px;
+            font-family: "Myriad Pro";
+            font-size: 1.1em;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Selectors</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Text1</a></li>
+                <li><a href="#">Text2</a></li>
+                <li><a href="#">Text3</a></li>
+                <li><a href="#">Text4</a></li>
+                <li><a href="#">Text5</a></li>
+            </ul>
+        </nav>
+    </header>
+<section>
+    <article>
+        <header>
+            <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim et ex hic id illum laboriosam magni mollitia placeat quod quos reprehenderit, ullam, voluptatem voluptates! Autem deserunt dicta fugit modi recusandae!</h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci doloremque, dolorum illum ipsam magni quam quod recusandae. Accusamus aliquam architecto dicta enim esse illo iusto laudantium nihil possimus qui?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae culpa officia recusandae repellendus repudiandae rerum tenetur voluptatem? Ab deleniti deserunt excepturi harum iure nostrum possimus, quaerat quis quisquam sequi suscipit!</p>
+    </article>
+</section>
+</body>
+</html>

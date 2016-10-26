@@ -1,0 +1,22 @@
+thead {
+    background: linear-gradient(#5EBC53, #336633);
+}
+
+th{
+    padding: 5px;
+    color: white;
+    border: 1px solid #D1D0B8;
+}
+
+td {
+    padding: 10px;
+    border-right: 1px solid #D1D0B8;
+
+}
+.yellow{
+    background-color: #EBEBD7;
+}
+table{
+    border-collapse: collapse;
+    border: 1px solid #D1D0B8;
+}

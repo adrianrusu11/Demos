@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Atribute selectors</title>
+    <style>
+        input[type=text]{
+            width:500px;
+        }
+        a[title]{
+            background-color: darkgrey;
+        }
+        a[title*=Academy] {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" />
+    <a href="http://itacademy.com" title="IT Academy">Go to IT Academy</a>
+    <a href="http://itacademy.com">Go to IT Academy</a>
+    <input type="password"/>
+</body>
+</html>

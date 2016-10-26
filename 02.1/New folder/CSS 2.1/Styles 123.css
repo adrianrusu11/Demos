@@ -1,0 +1,39 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: white;
+}
+
+ul {
+
+    list-style: none;
+}
+
+li {
+
+    font-family: Helvetica;
+    font-size: 15px;
+    border-right: 1px solid grey;
+    padding: 7px;
+    border-top: 7px solid #1D5992;
+    border-bottom: 7px solid #1D5992;
+    display: inline-block;
+    float: left;
+    background: linear-gradient(#C6C3C3, #F9F9F9);
+}
+
+li:nth-child(4) {
+    border-right: 7px solid #1D5992;
+}
+
+li:nth-child(1) {
+    border-left: 7px solid #1D5992;
+    padding-left: 5px;
+}
+
+li:nth-child(3):hover {
+    color: white;
+    background: linear-gradient(#4884BC, #164E83, #7CAAD1);
+}

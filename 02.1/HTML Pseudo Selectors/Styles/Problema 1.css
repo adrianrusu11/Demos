@@ -1,0 +1,43 @@
+dt{
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: royalblue;
+    padding-left: 20px;
+}
+dd{
+padding-left: 100px;
+margin-top: -27px;
+    margin-bottom: 10px;
+
+}
+.link {
+    padding-top: 27px;
+}
+.definition, .link{
+    color: #ffcc66;
+}
+#noActiveSupport{
+    color: red;
+    padding-top: 27px;
+}
+
+#notAnswered{
+    color: orange;
+}
+.blue{
+    color:#E9E1CA;
+}
+
+p{
+    padding-left: 20px;
+    color: #A4BAB7;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+div{
+    height: 280px;
+    width:350px;
+    background-color: #DBDBDB;
+    border: 10px solid #595959;
+}
