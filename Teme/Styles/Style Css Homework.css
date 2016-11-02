@@ -107,3 +107,10 @@ article p:nth-child(3){
    float: right;
     padding-right: 50px;
 }
+a{
+   text-decoration: none;
+    color: white;
+}
+a:hover{
+    background: lightseagreen;
+}
