@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css Display Overflow </title>
+    <style>
+        .box{
+            width: 250px;
+            height: 250px;
+            border:1px solid #2929d3;
+            background-color: #add8e6;
+            text-align: center;
+        }
+        .inline {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Nav Item</a> </li>
+                <li><a href="#">Nav Item</a> </li>
+                <li><a href="#">Nav Item</a> </li>
+                <li><a href="#">Nav Item</a> </li>
+                <li><a href="#">Nav Item</a> </li>
+                <li><a href="#">Nav Item</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div>Normal Div</div>
+        <div class="inline">Div with display <strong>inline</strong></div>
+        <span>Normal Span</span>
+        <span class="block">Span with display <strong>block</strong></span>
+        <div class="box">text in a box</div>
+    </section>
+</body>
+</html>
