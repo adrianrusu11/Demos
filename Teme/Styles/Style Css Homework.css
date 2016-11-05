@@ -1,0 +1,124 @@
+body {
+background: linear-gradient(#D291FC, #9215F2 );
+}
+img{
+    height: 100px;
+}
+form{
+    float: right;
+}
+
+input{
+    float: right;
+    background: #9215F2;
+    border-radius: 10px;
+    margin-top:  5px;
+    border-color: #9F4BE3;
+    width: 150px;
+    margin-right: 100px;
+}
+button{
+    margin-top: 10px;
+    background: #9F4BE3;
+    color: white;
+    font-weight: 700;
+    border: 2px solid #B35EF2;
+    border-radius: 8px;
+    box-shadow: 1px 1px white;
+    width: 80px;
+    height: 30px;
+}
+label{
+    color: white;
+    float: left;
+    padding-right: 5px;
+    margin-top: 8px;
+}
+
+#PrimaLista{
+    width: 1100px;
+    height: 40px;
+    border: 3px solid #5B1C8D;
+    border-radius: 15px;
+}
+
+.heading{
+    display: inline-block;
+    text-decoration: none;
+    padding-right: 15px;
+    color: white;
+    font-size: 18px;
+    padding-top: 9px;
+}
+
+article {
+    border: 3px solid #5B1C8D;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding-right: 5px;
+}
+.articleLeft{
+    width: 70%;
+    float: left;
+    height: 175px;
+}
+
+
+article h3, p{
+    padding-left: 15px;
+    color: white;
+}
+
+#divRight{
+    padding-right: 70px;
+    float: right;
+    height: 700px;
+    width: 300px;
+    padding-top: -200px;
+    margin-top: -400px;
+}
+.articleRight{
+    height: 175px;
+
+}
+#listaDreapta{
+    height: 140px;
+}
+
+article ul{
+    list-style-image:url('../Images/imagineLista.png');
+}
+
+article ul li{
+    color: white;
+
+}
+.clear{
+    clear: both;
+}
+footer{
+    height:50px;
+}
+footer p{
+    text-align: center;
+}
+
+article p:nth-child(3){
+   float: right;
+    padding-right: 50px;
+}
+a{
+   text-decoration: none;
+    color: white;
+}
+a:hover{
+    background: lightseagreen;
+}
+
+#butonForm:hover{
+    color: black;
+    background-color: white;
+}
+span{
+    background-color: blue;
+}
