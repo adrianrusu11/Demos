@@ -1,0 +1,35 @@
+body{
+    background-color: grey;
+}
+
+div {
+    text-align: center;
+}
+li{
+    color: white;
+}
+ul {
+    list-style: none;
+    display: inline-block;
+}
+li:nth-child(4){
+    text-decoration: underline;
+}
+li:nth-child(2){
+   background-color: white;
+}
+.yellow {
+    color: #ffcc66;
+    font-size: 20px;
+    font-weight: bold;
+}
+.black {
+    font-size: 20px;
+    font-weight: bold;
+}
+h1{
+    color: #ffcc66;
+}
+#footer {
+    text-align: center;
+}

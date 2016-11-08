@@ -114,3 +114,11 @@ a{
 a:hover{
     background: lightseagreen;
 }
+
+#butonForm:hover{
+    color: black;
+    background-color: white;
+}
+span{
+    background-color: blue;
+}
