@@ -1,14 +1,21 @@
+#mainDiv {
+    border: 1px solid #7E7E7E;
+    width: 50%;
+    height: 760px;
+    margin: auto;
+    padding: 5px;
+}
 body {
     background: #F0F0F0;
 }
 nav{
-    width: 20%;
+    width: 16%;
     float: left;
-    padding-right: 20px;
 }
 aside{
     float: right;
-    width: 20%;
+    width: 25%;
+    margin-top: -2px;
 }
 ul{
     list-style: none;
@@ -21,7 +28,7 @@ ul{
 }
 section{
     padding: 10px;
-    width: 45%;
+    width: 56%;
     float: left;
     background-color: white;
     border: 1px solid #7E7E7E;
@@ -30,6 +37,7 @@ section{
 section button {
     background: white;
     border: 1px solid black;
+    width: 90px;
 }
 section img {
     float: left;
@@ -48,6 +56,7 @@ hr{
 }
 
 aside div{
+    background-color: white;
     border: 1px solid grey;
     text-align: center;
     margin-top: 2px;
@@ -68,4 +77,8 @@ aside h4{
     font-weight: 800;
     color: #36C7FE;
     border: 1px solid black;
+}
+
+input{
+    width:100px;
 }
