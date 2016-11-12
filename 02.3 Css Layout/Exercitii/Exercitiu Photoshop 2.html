@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercitiu Photoshop 2</title>
+    <style>
+        #website{
+            width: 1400px;
+            margin: 0 auto;
+        }
+        #mainPage{
+            width: 1176px;
+            height: 1105px;
+            margin: 0 auto;
+        }
+        #logo{
+            width: 252px;
+            height: 56px;
+            background-color: blue;
+            float: left;
+        }
+        #listHeader{
+            list-style: none;
+            margin: 0;
+            float: right;
+        }
+        #listHeader li{
+            width: 56px;
+            height: 56px;
+            background-color: blue;
+            margin-left: 42px;
+            float: right;
+        }
+        #mainImage{
+            width: 1176px;
+            height: 762px;
+            background-color: black;
+            margin-top: 29px;
+            float: left;
+        }
+        #bottomImages{
+            list-style: none;
+            width: 1176px;
+            height: 214px;
+            padding-left: 0;
+        }
+        #bottomImages li{
+            float: left;
+            height: 214px;
+            width: 280px;
+            background-color: black;
+            margin-top: 32px;
+        }
+        #bottomImages li:nth-child(-n+2)
+        {
+            margin-right: 19px;
+        }
+        #bottomImages li:nth-child(4){
+            float: right;
+        }
+        footer{
+            float: left;
+            height: 88px;
+            width: 100%;
+            background-color: black;
+            margin: 0 auto;
+            margin-top: 25px;
+        }
+        #frontTea{
+            position: fixed;
+            margin: 133px 0 0 227px;
+        }
+    </style>
+</head>
+<body>
+<div id="website">
+    <div id="mainPage">
+        <div id="logo"><img src="Images/tea-time-logo.jpg"/></div>
+        <ul id="listHeader">
+            <li><img src="Images/tea-cup.jpg"/></li>
+            <li><img src="Images/tea-cup.jpg"/></li>
+        </ul>
+        <div id="mainImage">
+            <div id="frontTea">
+                <img src="Images/front-tea.jpg">
+            </div><img src="Images/background-tea.jpg"></div>
+        <ul id="bottomImages">
+            <li><img src="Images/tea%201.jpg"/> </li>
+            <li><img src="Images/tea2.jpg"/></li>
+            <li><img src="Images/tea3.jpg"/></li>
+            <li><img src="Images/tea4.jpg"/></li>
+        </ul>
+    </div>
+<footer>
+
+</footer>
+</div>
+</body>
+</html>
