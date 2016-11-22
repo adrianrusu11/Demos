@@ -1,0 +1,13 @@
+.mymixin(@colormixin) {
+  padding: 50px;
+  border: 1px solid @colormixin;
+  width: 25%;
+}
+
+h3{
+  .mymixin(#EE0202);
+}
+
+h4{
+  .mymixin(#aaa);
+}
