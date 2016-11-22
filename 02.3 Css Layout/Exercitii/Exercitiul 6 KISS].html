@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keep It Simple</title>
+    <style>
+        main{
+            width: 800px;
+            margin: 0 auto;
+        }
+        header{
+            width: 800px;
+            margin: 0 auto;
+        }
+        #mainImage {
+            padding-top: 10px;
+            width: 800px;
+            margin: 0 auto;
+        }
+        #leftBottomImage{
+            float: left;
+            padding-top: 10px;
+        }
+        #rightBottomImage{
+            float: right;
+            padding-top:  10px;
+        }
+        #logo{
+            width: 100px;
+            float: left;
+        }
+        #verticalLine{
+            height: 25px;
+            width: 3px;
+            vertical-align: middle;
+        }
+        ul{
+            float: right;
+            list-style: none;
+        }
+        li{
+            display: inline-block;
+            padding-right: 20px;
+            font-size: 15px;
+        }
+        .horizontallLine{
+            width:800px;
+            height: 1px;
+            margin: 0 auto;
+        }
+        footer{
+            width: 800px;
+            margin: 0 auto;
+        }
+        footer p:nth-child(1){
+            float: left;
+        }
+        footer p:nth-child(2){
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="Images/Name.com.png"/>
+        <img id="verticalLine" src="Images/vertical-line.jpg"/>
+        <ul>
+            <li>Welcome</li><img id="verticalLine" src="Images/vertical-line.jpg"/>
+            <li>Designs</li><img id="verticalLine" src="Images/vertical-line.jpg"/>
+            <li>About</li>
+        </ul>
+        <img class="horizontallLine" src="Images/horizontalline.JPG"/>
+    </header>
+    <main>
+    <div id="mainImage"><img src="Images/image1.jpg"/></div>
+    <div id="leftBottomImage"><img src="Images/image2.png"/></div>
+    <div id="rightBottomImage"><img src="Images/image3.png"/></div>
+    </main>
+    <footer>
+        <img class="horizontallLine" src="Images/horizontalline.JPG"/>
+        <p>Copyright Information</p>
+        <p>All rights reserved</p>
+    </footer>
+</body>
+</html>
