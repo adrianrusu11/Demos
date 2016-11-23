@@ -1,0 +1,44 @@
+.headingList {
+  float: left;
+  padding: 5px;
+  list-style-type: none;
+  font-size: 15px;
+  font-family: cursive;
+  border-right: 1px solid black;
+}
+.mainList {
+  list-style-type: none;
+}
+body {
+  background-color: #167318;
+  background: -webkit-gradient(linear, left top, left bottom, from(#167318), to(#87FFAE));
+  background: -webkit-linear-gradient(top, #167318, #87FFAE);
+  background: -moz-linear-gradient(top, #167318, #87FFAE);
+  background: -ms-linear-gradient(top, #167318, #87FFAE);
+  background: -o-linear-gradient(top, #167318, #87FFAE);
+}
+body heading h1 {
+  float: left;
+}
+body heading ul {
+  float: left;
+}
+body heading ul li {
+  float: left;
+  padding: 5px;
+  list-style-type: none;
+  font-size: 15px;
+  font-family: cursive;
+  border-right: 1px solid black;
+}
+body heading a {
+  text-decoration: none;
+}
+main ul li {
+  float: left;
+  padding: 5px;
+  list-style-type: none;
+  font-size: 15px;
+  font-family: cursive;
+  border-right: 1px solid black;
+}
