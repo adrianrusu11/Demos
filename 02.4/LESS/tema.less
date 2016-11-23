@@ -1,0 +1,49 @@
+.headingList{
+  float: left;
+  padding: 5px;
+  list-style-type: none;
+  font-size: 15px;
+  font-family: cursive;
+  border-right: 1px solid black;
+}
+.mainList{
+  list-style-type: none;
+
+}
+
+.gradient (@startColor: #167318, @endColor: #87FFAE) {
+  background-color: @startColor;
+  background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+  background: -webkit-linear-gradient(top, @startColor, @endColor);
+  background: -moz-linear-gradient(top, @startColor, @endColor);
+  background: -ms-linear-gradient(top, @startColor, @endColor);
+  background: -o-linear-gradient(top, @startColor, @endColor);
+}
+
+
+body{
+.gradient();
+  heading{
+    h1{
+      float: left;
+    }
+    ul{
+      float: left;
+
+      li{
+        .headingList;
+      }
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+}
+
+main{
+  ul{
+    li{
+      .headingList;
+    }
+  }
+}
