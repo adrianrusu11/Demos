@@ -1,0 +1,20 @@
+.one {
+  background-color: green;
+}
+.two {
+  background-color: #800080;
+}
+.three {
+  background-color: #670066;
+}
+.four {
+  background-color: #00cd00;
+}
+.five {
+  background-color: #1aff1a;
+}
+div {
+  width: 100px;
+  height: 188px;
+  display: inline-block;
+}

@@ -1,0 +1,30 @@
+#someDiv {
+  -webkit-transform: rotate(90deg) scale(0.5) skew(1deg) translate(0px);
+  -moz-transform: rotate(90deg) scale(0.5) skew(1deg) translate(0px);
+  -o-transform: rotate(90deg) scale(0.5) skew(1deg) translate(0px);
+  -ms-transform: rotate(90deg) scale(0.5) skew(1deg) translate(0px);
+  transform: rotate(90deg) scale(0.5) skew(1deg) translate(0px);
+  width: 301px;
+  height: 188px;
+}
+#someDiv:hover {
+  opacity: 0.7;
+}
+#otherDiv {
+  margin-top: 100px;
+  -webkit-transform: rotate(90deg) scale(0.5) skew(1deg) translate(0px);
+  -moz-transform: rotate(90deg) scale(0.5) skew(1deg) translate(0px);
+  -o-transform: rotate(90deg) scale(0.5) skew(1deg) translate(0px);
+  -ms-transform: rotate(90deg) scale(0.5) skew(1deg) translate(0px);
+  transform: rotate(90deg) scale(0.5) skew(1deg) translate(0px);
+  width: 301px;
+  height: 188px;
+}
+#otherDiv:hover {
+  -webkit-transform: rotate(150deg) scale(0.7) skew(10deg) translate(20px);
+  -moz-transform: rotate(150deg) scale(0.7) skew(10deg) translate(20px);
+  -o-transform: rotate(150deg) scale(0.7) skew(10deg) translate(20px);
+  -ms-transform: rotate(150deg) scale(0.7) skew(10deg) translate(20px);
+  transform: rotate(150deg) scale(0.7) skew(10deg) translate(20px);
+  opacity: 0.8;
+}

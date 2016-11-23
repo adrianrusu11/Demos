@@ -6,10 +6,16 @@
   font-family: cursive;
   border-right: 1px solid black;
 }
+.sideLists {
+  border: 1px solid black;
+  border-radius: 5%;
+  width: 300px;
+  height: 200px;
+}
 .mainList {
   list-style-type: none;
 }
-body {
+html {
   background-color: #167318;
   background: -webkit-gradient(linear, left top, left bottom, from(#167318), to(#87FFAE));
   background: -webkit-linear-gradient(top, #167318, #87FFAE);
@@ -17,13 +23,14 @@ body {
   background: -ms-linear-gradient(top, #167318, #87FFAE);
   background: -o-linear-gradient(top, #167318, #87FFAE);
 }
-body heading h1 {
+html body heading h1 {
+  margin-top: 100px;
   float: left;
 }
-body heading ul {
+html body heading ul {
   float: left;
 }
-body heading ul li {
+html body heading ul li {
   float: left;
   padding: 5px;
   list-style-type: none;
@@ -31,14 +38,32 @@ body heading ul li {
   font-family: cursive;
   border-right: 1px solid black;
 }
-body heading a {
+html body heading a {
   text-decoration: none;
 }
-main ul li {
+html #leftDiv {
+  background-color: #167318;
+  background: -webkit-gradient(linear, left top, left bottom, from(#167318), to(#87FFAE));
+  background: -webkit-linear-gradient(top, #167318, #87FFAE);
+  background: -moz-linear-gradient(top, #167318, #87FFAE);
+  background: -ms-linear-gradient(top, #167318, #87FFAE);
+  background: -o-linear-gradient(top, #167318, #87FFAE);
+  border: 1px solid black;
+  border-radius: 5%;
+  width: 300px;
+  height: 200px;
   float: left;
-  padding: 5px;
-  list-style-type: none;
-  font-size: 15px;
-  font-family: cursive;
-  border-right: 1px solid black;
+}
+html #rightDiv {
+  background-color: #167318;
+  background: -webkit-gradient(linear, left top, left bottom, from(#167318), to(#87FFAE));
+  background: -webkit-linear-gradient(top, #167318, #87FFAE);
+  background: -moz-linear-gradient(top, #167318, #87FFAE);
+  background: -ms-linear-gradient(top, #167318, #87FFAE);
+  background: -o-linear-gradient(top, #167318, #87FFAE);
+  border: 1px solid black;
+  border-radius: 5%;
+  width: 300px;
+  height: 200px;
+  float: right;
 }

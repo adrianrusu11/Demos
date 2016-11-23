@@ -6,6 +6,13 @@
   font-family: cursive;
   border-right: 1px solid black;
 }
+.sideLists{
+  border:1px solid black;
+  border-radius: 5%;
+  width: 300px;
+  height: 200px;
+
+}
 .mainList{
   list-style-type: none;
 
@@ -20,30 +27,39 @@
   background: -o-linear-gradient(top, @startColor, @endColor);
 }
 
+html{
+  .gradient();
 
-body{
-.gradient();
-  heading{
-    h1{
-      float: left;
-    }
-    ul{
-      float: left;
+  body{
 
-      li{
-        .headingList;
+    heading{
+      h1{
+        margin-top: 100px;
+        float: left;
+      }
+      ul{
+        float: left;
+
+        li{
+          .headingList;
+        }
+      }
+      a{
+        text-decoration: none;
       }
     }
-    a{
-      text-decoration: none;
-    }
+  }
+
+  #leftDiv {
+    .gradient;
+    .sideLists;
+    float: left;
+  }
+
+  #rightDiv{
+    .gradient;
+    .sideLists;
+    float: right;
   }
 }
 
-main{
-  ul{
-    li{
-      .headingList;
-    }
-  }
-}
