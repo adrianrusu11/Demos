@@ -1,0 +1,11 @@
+#someDiv {
+  background-color: #663333;
+  background-image: -webkit-linear-gradient(left, #663333, orangered);
+  background-image: -moz-linear-gradient(left, #663333, orangered);
+  background-image: -o-linear-gradient(left, #663333, orangered);
+  background-image: -ms-linear-gradient(left, #663333, orangered);
+  background-image: linear-gradient(left, #663333, orangered);
+  border: 1px solid black;
+  width: 300px;
+  height: 500px;
+}

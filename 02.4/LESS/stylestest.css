@@ -1,0 +1,12 @@
+#header {
+  border-width: 1px;
+  border-style: solid;
+  width: 100px;
+  color: #666666;
+  border-left-width: 1px;
+  border-right-width: 100px;
+}
+#footer {
+  color: #114411;
+  border-color: #5f3c35;
+}
