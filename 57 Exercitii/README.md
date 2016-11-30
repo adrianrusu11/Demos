@@ -87,3 +87,6 @@ updates the values when any value changes.
 percentage, have the user drag a slider that rates satisfaction
 with the server, using a range between 5% and
 20%.
+
+
+"get element by id", "value" rezolvare alternativa
