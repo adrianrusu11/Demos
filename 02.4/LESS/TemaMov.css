@@ -1,0 +1,97 @@
+.borderInput {
+  border-radius: 10px;
+  border: 1px solid black;
+  color: white;
+}
+html {
+  background: linear-gradient(#C597FF, #7F46FB);
+}
+body {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+body header {
+  height: 200px;
+}
+body header img {
+  display: inline-block;
+  float: left;
+}
+body header ul {
+  clear: left;
+  float: left;
+  list-style: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 25px;
+  height: 25px;
+  width: 800px;
+}
+body header ul li {
+  padding-left: 10px;
+  display: inline-block;
+  font-weight: 800;
+  color: white;
+}
+body header form {
+  margin-top: -125px;
+  clear: right;
+  float: right;
+  color: white;
+  font-weight: 800;
+}
+body header form label {
+  float: left;
+  margin-top: 3px;
+}
+body header form input {
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: white;
+  color: black;
+  margin-top: 3px;
+  width: 150px;
+  float: right;
+}
+body header form button {
+  margin-top: 10px;
+  background-color: #BA87FF;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: white;
+  font-weight: 700;
+}
+body main article {
+  float: left;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+body main article p:nth-child(3) {
+  float: right;
+}
+body aside {
+  margin-top: -430px;
+  float: right;
+  width: 15%;
+}
+body aside div {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: white;
+  margin-top: 5px;
+}
+body footer {
+  width: 100%;
+  clear: both;
+}
+body footer p {
+  margin-left: 50%;
+  color: white;
+}

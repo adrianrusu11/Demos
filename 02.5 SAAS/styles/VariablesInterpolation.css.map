@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAME,QAAG;EACD,UAAsB,EACb,eAAyC",
+"sources": ["VariablesInterpolation.scss"],
+"names": [],
+"file": "VariablesInterpolation.css"
+}
