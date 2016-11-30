@@ -68,7 +68,11 @@ body main article {
   border-radius: 10px;
   border: 1px solid black;
   color: white;
+<<<<<<< HEAD
   padding: 10px;
+=======
+  padding: 5px;
+>>>>>>> origin/master
   margin-bottom: 10px;
 }
 body main article p:nth-child(3) {
