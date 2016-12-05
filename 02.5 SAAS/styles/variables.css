@@ -1,0 +1,8 @@
+body {
+  background-color: grey; }
+  body a {
+    color: red; }
+    body a:visited {
+      color: green; }
+
+/*# sourceMappingURL=variables.css.map */

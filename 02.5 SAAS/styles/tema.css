@@ -1,0 +1,47 @@
+html {
+  background-color: #167318;
+  background: -webkit-gradient(linear, left top, left bottom, from(#167318), to(#87FFAE));
+  background: -webkit-linear-gradient(top, #167318, #87FFAE);
+  background: -moz-linear-gradient(top, #167318, #87FFAE);
+  background: -ms-linear-gradient(top, #167318, #87FFAE);
+  background: -o-linear-gradient(top, #167318, #87FFAE); }
+  html body heading h1 {
+    margin-top: 100px;
+    float: left; }
+  html body heading ul {
+    float: left; }
+    html body heading ul li {
+      float: left;
+      padding: 5px;
+      list-style-type: none;
+      font-size: 15px;
+      font-family: cursive;
+      border-right: 1px solid black; }
+  html body heading a {
+    text-decoration: none; }
+  html #leftDiv {
+    background-color: #167318;
+    background: -webkit-gradient(linear, left top, left bottom, from(#167318), to(#87FFAE));
+    background: -webkit-linear-gradient(top, #167318, #87FFAE);
+    background: -moz-linear-gradient(top, #167318, #87FFAE);
+    background: -ms-linear-gradient(top, #167318, #87FFAE);
+    background: -o-linear-gradient(top, #167318, #87FFAE);
+    border: 1px solid black;
+    border-radius: 5%;
+    width: 300px;
+    height: 200px;
+    float: left; }
+  html #rightDiv {
+    background-color: #167318;
+    background: -webkit-gradient(linear, left top, left bottom, from(#167318), to(#87FFAE));
+    background: -webkit-linear-gradient(top, #167318, #87FFAE);
+    background: -moz-linear-gradient(top, #167318, #87FFAE);
+    background: -ms-linear-gradient(top, #167318, #87FFAE);
+    background: -o-linear-gradient(top, #167318, #87FFAE);
+    border: 1px solid black;
+    border-radius: 5%;
+    width: 300px;
+    height: 200px;
+    float: right; }
+
+/*# sourceMappingURL=tema.css.map */
