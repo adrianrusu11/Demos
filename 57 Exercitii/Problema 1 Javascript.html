@@ -5,7 +5,14 @@
     <title>Tip Calculator</title>
     <script type="text/javascript" src="Javascript/scriptPopup.js"></script>
 </head>
-<body onload="calculate()">
-
+<body>
+    <form>
+        What is the bill amount($)<br/><input id="billAmount" type="number" name="BillAmount" placeholder="10.00"/><br/>
+        What is the tip rate(%)<br/><input id="tipRate" type="number" name="TipRate" placeholder="5"/><br/>
+        Tip (%)<br/><input type="number" name="Tip" readonly/><br/>
+        Total (%)<br/><input id="total" type="number" name="total"/><br/><br/>
+        <button onclick="calculate()">Calculate</button>
+        <button onclick="reset">Reset Fields</button>
+    </form>
 </body>
 </html>
