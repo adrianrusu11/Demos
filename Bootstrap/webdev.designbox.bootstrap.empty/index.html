@@ -121,10 +121,11 @@
 			<div class="row" id="featuresHeading">
                 <div class="col-12">
                     <h2>What We Do</h2>
-                    <p class="lead">DesignBox is a design agency specializes in fresh, cleaan web deisgn and graphics design and and graphics for you. Find out more...</p>
+                    <p class="lead">DesignBox is a design agency specializes in fresh, clean web design and graphics design and and graphics for you. Find out more...</p>
                 </div>
             </div><!--end featuresHeading-->
 			<div class="row" id="features">
+
                 <div class="col-sm-4 feature">
                     <div class="panel">
                         <div class="panel-heading">
@@ -132,10 +133,8 @@
                         </div>
                         <img src="images/badge_recentWork1.jpg" alt="HTML5" class="img-circle"/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur debitis deserunt eos facere in nesciunt provident quae quisquam quos ratione rerum, ullam, ut voluptate! Adipisci corporis debitis mollitia non qui.</p>
-
                         <a href="#" class="btn btn-warning btn-block">Find out more</a>
                     </div><!--end panel-->
-
                 </div>
                 <div class="col-sm-4 feature">
                     <div class="panel">
@@ -156,16 +155,113 @@
                         </div>
                         <img src="images/badge_recentWork3.jpg" alt="HTML5" class="img-circle"/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur debitis deserunt eos facere in nesciunt provident quae quisquam quos ratione rerum, ullam, ut voluptate! Adipisci corporis debitis mollitia non qui.</p>
-
                         <a href="#" class="btn btn-warning btn-block">Find out more</a>
                     </div><!--end panel-->
-
                 </div>
+                <div class="row" id="moreInfo">
+                    <div class="col-12">
+                        <div class="tabbable">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#tab1" data-toggle="tab">Contact Infos</a></li>
+                                <li><a href="#tab2" data-toggle="tab">Contact Us</a> </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="tab1">
+                                    <h4><span class="glyphicon glyphicon-map-marker"></span>Our Location<small>More like a holiday place</small> </h4>
+                                    <iframe width="100%" height="200" frameborder="0" scrooling="no" marginheight="0" marginwidth="0" src="https://maps.google.ch/maps?f=q&amp;source=s_q&amp;hl=de&amp;geocode=&amp;q=Bern&amp;aq=&amp;sll=46.813187,8.22421&amp;sspn=3.379772,8.453979&amp;ie=UTF8&amp;hq=&amp;hnear=Bern&amp;t=m&amp;z=12&amp;ll=46.947922,7.444608&amp;output=embed&amp;iwloc=near"></iframe>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, cum debitis enim error illo libero molestias mollitia natus officiis perferendis possimus praesentium quasi soluta temporibus tenetur voluptate voluptates! Labore, molestiae?</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad corporis cumque exercitationem id inventore laboriosam maxime molestiae non repudiandae sapiente similique, sunt suscipit. Aliquam aperiam assumenda eaque excepturi obcaecati.</p>
+                                </div>
+                                <div class="tab-pane" id="tab2">
+                                    <h4>Contact Us<small>Now</small></h4>
+                                    <img src="images/contact_us.jpg" class="thumbnail pull-left" alt="Placeholder image"/>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet blanditiis distinctio dolore, enim error esse expedita impedit iure maiores maxime minus, quae quod sunt vel. Esse officia similique ut?</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, blanditiis est labore libero nulla obcaecati quaerat quidem quis ullam! Aspernatur consequuntur dolorem nobis temporibus! Accusantium aut harum magnam odio quis.</p>
+                                    <hr/>
+                                    <a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>Contact Us!</a>
+                                    <div class="modal fade" id="myModal">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button class="modal">&times;</button>
+                                                    <h4 class="modal-title">Contact Us(Modal Window)</h4>
+                                                </div><!--end modal header-->
+                                                <div class="modal-body">
+                                                    <h4>Complete this form</h4>
+                                                    <p>Come forms include a Validate button at the top or bottom of teh pafe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloribus eaque, earum iste laborum tempore voluptate! Aliquid ex ipsum magni obcaecati ratione? Eius harum magni molestiae optio reiciendis sapiente sunt?</p>
+                                                    <h4>Tooltips in a modal</h4>
+                                                    <a href="" data-original-title="Tooltip1" rel="tooltip">A Link</a>with a tooltip, and <a href="#" data-original-title="Tooltip2" rel="tooltip">another</a>!
+                                                    <hr/>
+                                                    <p><small class="text-muted">PS. This form doesn't do anything</small></p>
+                                                    <form class="form-horizontal" action="save_json.php" method="post">
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label" for="inputName">Name</label>
+                                                            <div class="col-lg-10">
+                                                                <input class="form-control" id="inputName" name="inputName" placeholder="Name" type="text"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+                                                            <div class="col-lg-10">
+                                                                <input class="form-control" id="inputEmail" name="inputEmail" placeholder="Email" type="text"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-2 control-label" for="inputMessage">Message</label>
+                                                            <div class="col-lg-10">
+                                                                <textarea class="form-control" id="inputMessage" name="inputMessage" placeholder="Message" rows="3"></textarea>
+                                                                <button class="btn btn-success pull-right" type="submit">Send!</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div><!--end modal-body-->
+                                                <div class="modal-footer">
+                                                    <button class="btn btn-defaul" data-dismiss="modal" type="button">Close</button>
+                                                    <button class="btn btn-primary" type="button">Savew Changes</button>
+                                                </div><!--End modal-footer-->
+                                            </div><!--End modal-content-->
+                                        </div><!--End modal-dialog-->
+                                    </div><!--end myModal-->
+                                </div><!--end tab-pane-->
+                            </div><!--end tab-content-->
+                        </div><!--end tabbable-->
+                    </div><!--end 12 cols-->
+                </div><!--end moreInfo-->
             </div><!--end features-->
 			<div class="row" id="moreInfo"></div><!--end moreInfo-->
 		</div><!--end container-->
 	<footer>
-		<div class="container"></div>
+		<div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h6>Copyright &copy; 2015 {name}</h6>
+                </div><!--end col-sm-2-->
+                <div class="col-sm-4">
+                    <h6>About Us</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eveniet, impedit ipsam nulla provident recusandae reiciendis unde? Ab, atque, delectus dolorum est exercitationem harum hic illum, itaque saepe tempora voluptate.</p>
+                </div><!--end col-sm-4-->
+                <div class="col-sm-2">
+                    <h6>Navigation</h6>
+                    <ul class="unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Links</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div><!--end col-sm-2-->
+                <div class="col-sm-2">
+                    <h6>Follow Us</h6>
+                    <ul class="unstyled">
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">UAIC</a></li>
+                    </ul>
+                </div><!--end col-sm-2-->
+                <div class="col-sm-2">
+                    <h6>Coded with<span class="glyphicon glyphicon-heart"></span>by DesignBox</h6>
+                </div><!--end col-sm-2-->
+            </div><!--end row-->
+        </div><!--end container-->
 	</footer>
 
 	<!--Javascript at the bottom of the page-->
