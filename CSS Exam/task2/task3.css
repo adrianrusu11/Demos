@@ -1,0 +1,39 @@
+body {
+  margin: 0 auto;
+  width: 960px;
+  font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+  font-size: 16px; }
+  body div {
+    display: inline-block; }
+    body div div {
+      width: 150px;
+      float: left;
+      padding-top: 5px;
+      padding-left: 3px;
+      padding-right: 3px;
+      border: 1px solid grey; }
+      body div div hgroup {
+        width: 150px;
+        width: 100%;
+        background-image: url(imgs/install.png);
+        background-repeat: no-repeat;
+        background-position: left top;
+        display: inline-block; }
+        body div div hgroup h3 {
+          font-size: 15px;
+          float: right; }
+        body div div hgroup h2 {
+          font-size: 15px;
+          float: right; }
+    body div div hgroup {
+      width: 150px;
+      width: 100%;
+      background-image: url(imgs/tuneUp.png);
+      background-repeat: no-repeat;
+      background-position: left top;
+      display: inline-block; }
+
+a {
+  color: red; }
+
+/*# sourceMappingURL=task3.css.map */
