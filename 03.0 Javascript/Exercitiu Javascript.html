@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Exercises</title>
+</head>
+<body>
+<p id="car">Content123</p><br/>
+<p id="numar">Numar</p><br/>
+<p id="suma">Suma</p><br/>
+<p id="xyz"></p><br/>
+<p id="demo">Display the result here.</p><br/>
+<p id="demo1">Display the result here.</p><br/>
+<p id="adunare">adunare</p><br/>
+<p id="scadere">scadere</p><br/>
+<p id="inmultire">inmultire</p><br/>
+<p id="impartire">impartire</p><br/>
+<p id="percent">modulo</p><br/>
+<p id="plusEgal">plusEgal</p><br/>
+<p id="minusEgal">minusEgal</p><br/>
+<p id="inmultireEgal">inmultireEgal</p><br/>
+<p id="impartireEgal">impartireEgal</p><br/>
+<p id="procentEgal">procentEgal</p><br/>
+<p onmouseover="this.innerHTML='Good Job'"> Event</p><br/>
+<button id="buton" onclick="myFunction()">Click Me!!!</button><br/>
+<span onmouseover="this.style.color='red'">Text for testing</span>
+<p id="text">Textul</p><br/>
+<p id="lungime">Lungimea Aici</p><br/>
+<p id="vikingi">Vikingi Aici</p><br/>
+<p id="norocLume">Hello?</p><br/>
+<p id="slice">Slice???</p><br/>
+<p id="replace">Replace???</p><br/>
+<p id="upperCase">Uppercase</p><br/>
+<p id="lowerCase">Lowercase</p><br/>
+<p id="concatenare">Concatenare</p><br/>
+<button onclick="unitPrice()">Pret</button>
+
+
+<script>
+    carName="Honda";
+    document.getElementById("car").innerHTML = carName;
+    number=50;
+    document.getElementById("numar").innerHTML = number;
+    x=100;
+    y=9;
+    sum=x + y;
+    document.getElementById("suma").innerHTML = sum;
+    z=50;
+    sum1=sum*z;
+    document.getElementById("xyz").innerHTML = sum1;
+    var carName1 = "Volvo";
+    document.getElementById("demo").innerHTML = carName1;
+    var firstName = "John", lastName="Vangelis", age=35;
+    document.getElementById("demo1").innerHTML = firstName + " " + lastName + " is " + age;
+    document.getElementById("adunare").innerHTML = x + y;
+    document.getElementById("scadere").innerHTML = x - y;
+    document.getElementById("inmultire").innerHTML = x * y;
+    document.getElementById("impartire").innerHTML = x / y;
+    document.getElementById("percent").innerHTML = x % y;
+    x+=5;
+    y+=10;
+    document.getElementById("plusEgal").innerHTML = x + y;
+    x-=5;
+    y-=10;
+    document.getElementById("minusEgal").innerHTML = x + y;
+    x*=1.2;
+    y*=1.2;
+    document.getElementById("inmultireEgal").innerHTML = x + y;
+    x/=1.9;
+    y/=1.9;
+    document.getElementById("impartireEgal").innerHTML = x + y;
+    x=10;
+    y=2;
+    document.getElementById("procentEgal").innerHTML = x%=6;
+    function myFunction() {
+        document.getElementById("buton").innerHTML="Hello World!!!";
+    }
+
+    var txt="Hello World";
+    document.getElementById("text").innerHTML=txt;
+    document.write(txt.length);
+    document.getElementById("lungime").innerHTML =txt.length;
+    document.getElementById("vikingi").innerHTML="We are 'Vikings'";
+    var str1="Hello";
+    var str2="World";
+    document.getElementById("norocLume").innerHTML=str1 + " " + str2;
+    var str3="Apple, Kiwi, Bananna";
+    document.getElementById("slice").innerHTML=str3.slice(7, -9);
+    var str4="Hello World";
+    str4.replace('$2, $1');
+    var str5=str4.replace(/Hello/i, 'Salut');
+    document.getElementById("replace").innerHTML=str5;
+    str6=str4.toUpperCase();
+    document.getElementById("upperCase").innerHTML=str6;
+    str7=str4.toLowerCase();
+    document.getElementById("lowerCase").innerHTML=str7;
+    str8="Hello ";
+    str9="World ";
+    str10="sup?";
+    str11=str8.concat(str9.concat(str10.concat()));
+    document.getElementById("concatenare").innerHTML=str11;
+
+    function unitPrice() {
+        var pret=1.5;
+        var qty=1100;
+        if (qty >= 1000){
+        pret+=-1;
+        }
+        else{
+
+        }
+        var total=pret*qty;
+        document.write(total);
+    }
+
+</script>
+</body>
+</html>
