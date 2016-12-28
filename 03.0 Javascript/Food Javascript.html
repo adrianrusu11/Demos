@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food</title>
+</head>
+<body>
+    <p id="demo">Test</p>
+
+<script>
+    var i;
+    var text="";
+    var food=["pizza", "tacos", "cheese", "chickeno"];
+
+    for(i=0; i<food.length; i++){
+        text += "I love " + food[i] + "<br/>";
+    }
+    document.getElementById("demo").innerHTML=text;
+</script>
+</body>
+</html>

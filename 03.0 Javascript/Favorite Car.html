@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Favorite Car</title>
+</head>
+<body>
+    <input id="favoriteCar" type="text" placeholder="Mercedes" value="Peogeot"> </input>
+    <p id="text"></p>
+<script>
+    var text;
+    var favCar=document.getElementById("favoriteCar").value;
+
+    switch(favCar){
+        case "BMW":
+            text="Great German Car";
+            break;
+        case "Mercedes":
+            text="Masina de Fitze";
+            break;
+        case "Ford":
+            text="American Car";
+            break;
+        case "Peogeot":
+            text="French Car";
+            break;
+        default:
+            text="Nu am auzit de masina aia";
+    }
+    document.getElementById("text").innerHTML=text;
+</script>
+</body>
+</html>

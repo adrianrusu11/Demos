@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date and Time</title>
+</head>
+<body>
+    <p id="demo">Timpul Aici</p><br/>
+    <p id="demo2">Timpul Aici</p>
+    <p id="demo3">Timpul Aici</p>
+    <script>
+        var greeting;
+        var hour=new Date().getHours();
+        var minute=new Date().getMinutes();
+
+        if (hour<18) {
+            greeting = "Good Day";
+        }
+            else
+        {
+                greeting="Good Evening";
+        }
+        document.getElementById("demo").innerHTML=greeting;
+        document.getElementById("demo2").innerHTML=hour + ":" + minute;
+
+    </script>
+</body>
+</html>
