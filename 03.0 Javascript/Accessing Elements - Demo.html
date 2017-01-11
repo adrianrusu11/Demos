@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Accessing Elements - Demo</title>
+    <script type="text/javascript">
+        document.write(document.head.childNodes[0].innerHTML);
+    </script>
+</head>
+<body>
+    <div id="div_tag"><input type="text" value="test text"/><div><span id="test">text span</span></div></div>
+<script type="text/javascript">
+    //var el=document.getElementById('div_tag');
+    //alert(el.childNodes[0].value);
+</script>
+<script type="text/javascript">
+    var el=document.getElementById('div_tag');
+    alert(el.childNodes[0].value);
+    alert(el.childNodes[1].getElementsByTagName("span")[0].innerHTML);
+</script>
+<script>
+    function go(){
+        var childNodes=document.body.childNodes;
+        for(var i=0; i<childNodes.length; i++){
+            document.write(childNodes[i]);
+        }
+    }
+</script>
+<button onclick="go()">Show Nodes</button>
+</body>
+</html>

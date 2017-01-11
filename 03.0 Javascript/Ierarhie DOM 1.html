@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function ReadDiv(){
+            valDiv=document.getElementById("div_id").childNodes[0].nodeValue;
+            document.formular.text.value=valDiv;
+        }
+    </script>
+</head>
+<body><div id="div_id">Text inside div</div><form action="#" method="post" name="formular"><textarea cols="30" rows="5" name="text" id="text"></textarea><br/><input type="button" value="Add" onclick="ReadDiv();"/><input type="submit" value="Send"/></form>
+</body>
+</html>

@@ -49,11 +49,24 @@
         input[type=submit]:hover{
             background: #bcb4ae;
         }
+        /* Javascript Validation Styles*/
+        .hint{
+            font-weight: normal;
+            color: #2076c8;
+            margin-left: 10px;
+        }
+        .error{
+            font-weight: normal;
+            color: #cf1925;
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
-    <form id="myform" name="theform" action="data.php" method="post">
-        <span id="namehint" class="hint"></span>
+    <form id="myform" name="theform" action="#" method="post">
+        <span id="namehint" class="hint">
+
+        </span>
 
         <label for="name">Name:</label>
             <input type="text" name="name" required placeholder="Last, First" maxlength="20" value="" id="name"/>
@@ -71,11 +84,13 @@
         </datalist>
             <label for="zipcode">Zip Code</label>
             <input type="text" name="zipcode" pattern="[0-9]{6}" value="" id="zipcode"/>
-
+        <br />
+        <span id="formerror" class="error"></span>
+        <br />
             <label for="phone">Phone:</label>
-            <input type="text" name="phone" pattern="\d{4}\-\d{6}" value="" id="phone"/>
+            <input type="text" name="phone" value="" id="phone"/>
 
-            <span id="formerror" class="error"></span>
+            <span id="formerror1" class="error"></span>
             <label for="website">Website:</label>
             <input type="url" name="website" value="" id="website"/>
 
@@ -87,7 +102,7 @@
 
             <label for="reference">Where did you hear about us?</label>
             <select name="reference" id="reference">
-                <option>Choose...</option>
+                <option value="">Choose...</option>
                 <option value="http://www.uaic.ro">A friend</option>
                 <option value="http://www.facebook.com">Facebook</option>
                 <option value="http://www.twitter.com">Twitter</option>
@@ -104,5 +119,62 @@
                 <input type="submit" name="submit" value="Submit"/>
 
     </form>
+<script>
+    document.theform.name.onfocus=function () {
+        document.getElementById('namehint').innerHTML="(Enter last name, then first)";
+    }
+    document.theform.name.onblur=function () {
+        document.getElementById('namehint').innerHTML="";
+    }// onfocus
+
+    document.theform.website.onblur=function () {
+        if(document.theform.website.value ===""){
+            document.getElementById('formerror1').innerHTML="The URL field is required";
+        }//url empty
+        if(document.theform.website.value==="http://"){
+            document.getElementById('formerror1').innerHTML="Please add a valid URL"
+        }//  url empty
+    }//onblur
+
+    document.theform.website.onchange=function(){
+        var theURL=document.theform.website.value;
+
+        if(theURL.indexOf("http://")){
+            document.getElementById('formerror1').innerHTML="URLs must begin with http://";
+        }//doensn't have http
+    }//onchange
+
+    document.theform.reference.onchange=function(){
+        var id=document.theform.reference.selectedIndex;
+        var url=document.theform.reference[id].value;//window.location.href=url;
+
+        if(url !='' && window.confirm('really go to another page?'))
+        {
+            document.location.href=url;
+            window.open(url); //open in a new window
+        }
+        else{
+            document.location;
+        }
+    }//onfocus
+</script>
+    <script>
+
+        var myField=document.theform.phone;
+        var myError=document.getElementById('formerror');
+
+        myField.onchange=function(){
+            var myPattern=new RegExp("\\d{4}[\\-]\\d{6}", "i");
+            var isValid = this.value.search(myPattern)>=0;
+
+            if(!(isValid)){
+                myError.innerHTML="Input does not match expected pattern. xxxx-xxxxxx";
+            }
+            else{
+                //pattern not valid
+                myError.innerHTML="";
+            }//pattern is valid
+        }// myField has changed
+    </script>
 </body>
 </html>
