@@ -3,8 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>On Mouse Over</title>
+    <style>
+        body{
+        }
+        #my_span{
+            display: inline-block;
+            width:1000px;
+            height:1000px;
+            margin:0 auto;
+        }
+    </style>
+    <script type="text/javascript">
+        function onElementHover(event) {
+            var element=document.body;
+            element.style.backgroundColor="#C0C0FF";
+            element.innerHTML="Mouse X: "+(event.screenX || event.screenY)+ "; Mouse Y: " + (event.pageY || event.clientY);
+        }
+
+        function onElementUnhover(event) {
+            var element=document.getElementById("my_span");
+            element.style.backgroundColor="";
+            element.innerHTML="Place your mouse over here again";
+        }
+    </script>
 </head>
-<body>
-    <span id="my_span" onmouseover="onElementHover(event)" onmouseout="onElementUnhover(event)">Place your mouse over here</span>
+<body onmouseover="onElementHover()">
+   <!-- <span id="my_span" onclick="onElementHover(event)">Place your mouse over here</span>-->
 </body>
 </html>

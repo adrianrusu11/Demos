@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resize By</title>
+</head>
+<body>
+<button onclick="openWin()">Create window</button>
+<button onclick="resizeWin()">Resize Window to 800px x 600px</button>
+<button onclick="resizeWinBy()">Resize Window by 800px x 600px</button>
+
+<script>
+    var myWindow;
+    function openWin() {
+        myWindow=window.open("","","width=250, height=250");
+    }
+
+        function resizeWin() {
+            myWindow.resizeTo(800,600);
+            myWindow.focus();
+    }
+    function resizeWinBy() {
+        myWindow.resizeBy(-100,-50);
+        myWindow.focus();
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Window Location with JavaScript Example</title>
+</head>
+<body>
+    <p id="demo"></p>
+<script>
+    document.getElementById("demo").innerHTML="<strong>Page location is:</strong> " + window.location.href;
+</script>
+<p id="demo1"></p>
+<script>
+    document.getElementById("demo1").innerHTML="page hostname is: " + window.location.hostname;
+</script>
+
+<p id="demo2"></p>
+<script>
+    document.getElementById("demo2").innerHTML="Page path is: " + window.location.pathname;
+</script>
+
+<p id="demo3"></p>
+<script>
+    document.getElementById("demo3").innerHTML="Page protocol is: " + window.location.protocol;
+</script>
+
+<script>
+    function newDoc() {
+        window.location.assign("http://www.uaic.ro");
+    }
+</script>
+<button onclick="newDoc()">Hit me</button>
+</body>
+</html>

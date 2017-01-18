@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Date Button</title>
+    <style>
+    </style>
+
+</head>
+<body>
+<span onmouseover="myFunction2()" id="my_span"></span>
+<button onclick="myFunction()">Click Me</button>
+
+<script type="text/javascript">
+    function myFunction() {
+        document.getElementById("my_span").innerHTML = Date();
+    }
+    function myFunction2() {
+        var el=document.getElementById("my_span");
+        el.style.backgroundColor="#C0C0FF";
+    }
+</script>
+</body>
+</html>

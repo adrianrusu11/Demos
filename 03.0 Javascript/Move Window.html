@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="openWin()">Open "myWindow"</button>
+<button onclick="moveWin()">Move "myWindow"</button>
+<button onclick="moveTo()">Move the new window by 75 * 50px</button>
+<button onclick="moveWinBy()">Moveeee</button>
+
+<script>
+    var myWindow;
+
+    function openWin() {
+        myWindow=window.open("", myWindow, "width=200, height=100");
+        myWindow.document.write("<h1>Ferestruica</h1>");
+    }
+    function moveWin() {
+        myWindow.moveWin(500, 1000);
+        myWindow.focus();
+    }
+    function moveTo() {
+    myWindow.moveTo(150, 150);
+    myWindow.focus();
+    }
+    function moveWinBy() {
+        myWindow.moveBy(75,50);
+        myWindow.focus();
+    }
+</script>
+</body>
+</html>
