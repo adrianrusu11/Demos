@@ -81,8 +81,13 @@ Enter your name: <input type="text" id="fname" onchange="myFunction()"/>
 </script>
 <script>
     function myFunctionS(){
-        var x=document.getElementById("fnames");
-        x.value=x.value.toUpperCase();
+        //var x=document.getElementById("fnames");
+       // x.value=x.value.charAt(0).toUpperCase()+x.value.charAt(1).toLowerCase()+x.value.charAt(2).toLowerCase()+x.value.charAt(3).toLowerCase()+x.value.charAt(4).toLowerCase()+x.value.charAt(5).toLowerCase();
+
+        var x =document.getElementById("fnames");
+       //x.value=x.value.toUpperCase();
+        x.value=x.value.substring(0,1).toUpperCase() + x.value.substring(1).toLowerCase();
+        //de rezolvat daca exista mai multe nume, de eliminat spatiile de inainte si dupa string folosind functia "trim"
     }
 </script>
 Enter your name: <input type="text" id="fnames"/><br/><br/>
