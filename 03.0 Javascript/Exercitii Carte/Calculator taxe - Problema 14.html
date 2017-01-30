@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tax Calculator</title>
+</head>
+<body>
+<form id="firstForm" name="myForm" method="post">
+    What is the order Amount?
+    <input id="order-am" type="number" name="order_amount" required/><br/>
+    What is the state?
+    <input id="state" type="text" name="state" required/>
+    <button type="button" name="Calculate" onclick="calculateTax()">Calculate</button>
+    <p id="text"></p>
+</form>
+    <script>
+        /*Example Output
+         What is the order amount? 10
+         What is the state? WI
+         The subtotal is $10.00.
+         The tax is $0.55.
+         The total is $10.55.
+         Or
+         What is the order amount? 10
+         What is the state? MN
+         The total is $10.00
+
+         Pseudo code
+         TaxCalculator
+         Prompt for order amount
+         Prompt for state
+         if not WI
+         Display subtotal, tx, and total
+         else
+         Display the total
+         end*/
+function calculateTax() {
+    var x=parseFloat(document.getElementById('order-am').value);
+    var y=document.getElementById('state').value;
+    var tax=0.55;
+    var tot=x+tax;
+    var st=y.slice(0, 2);
+    var stat=st.toUpperCase();
+
+    if (stat=="WI"){
+        document.getElementById('text').innerHTML="What is the order amount? " + x + "</br>" + "What is the state?" + stat + "<br/>" + "The subtotal is $" + x.toFixed(2) + "." + "<br/>" + "The tax is $ " + tax + "." + "<br/>" + "The total is $" +tot + ".";
+    }
+    else if (stat=="MN"){
+        document.getElementById('text').innerHTML="What is the order amount?" + x + "<br/>" + "What is the state?" + stat + "<br/>" + "The total is $" + x.toFixed(2);
+    }
+    else if (stat=="Minnesota"){
+        document.getElementById('text').innerHTML="What is the order amount?" + x + "<br/>" + "What is the state?" + stat + "<br/>" + "The total is $" + x.toFixed(2);
+    }
+    else{
+        document.getElementById('text').innerHTML="Mexico?";
+    }
+}
+    </script>
+</body>
+</html>
