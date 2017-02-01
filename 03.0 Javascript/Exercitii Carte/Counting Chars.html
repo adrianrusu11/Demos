@@ -13,7 +13,7 @@
 <body>
     <form id="formCount" method="POST">
         <label for="count">What is your input string?</label>
-        <input type="text" id="count" name="count" onkeypress="startTimer()"/>
+        <input type="text" id="count" name="count" onclick="IsEmpty();" onfocus="IsEmpty();" onkeypress="startTimer()"/>
         <!--<button type="button" name="Calculate">Count on key press</button>-->
         <input type="text" id="counter" readonly="readonly"/>
     </form>
@@ -26,13 +26,16 @@
             //input_string=input_string.trim();
             var res=input_string.length;
             console.log(input_string + "has " + input_string.length + " characters.");
-            if (res===0){
-                document.getElementById('res').innerHTML="Please enter something.";
-            }
-            else{
+
                 document.getElementById('result').innerHTML=input_string+" has " +"'"+ res +"'"+ " characters.";
                 document.getElementById('counter').value=res;
             }
+        function IsEmpty()
+        {
+            if(document.getElementById('count').value==""){
+                document.getElementById('result').innerHTML="Please enter something.";
+            }
+            return;
         }
         function startTimer() {
             setTimeout('countChar()',1000);
