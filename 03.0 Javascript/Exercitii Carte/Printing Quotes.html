@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Printing Quotes</title>
+</head>
+<body>
+    <form>
+        <label for="quote">What is the Quote?</label>
+        <input type="text" id="quote" placeholder="Enter Quote Here"/><br/><br/>
+        <label for="author">Who is the Author?</label>
+        <input type="text" id="author" placeholder="Enter Author Here"><br/><br/>
+        <button type="button" onclick="quotes()">Place quote in list</button>
+        <br/>
+        <br/>
+        <br/>
+    </form>
+<script>
+    function quotes() {
+    var quote=document.getElementById('quote').value;
+    var author=document.getElementById('author').value;
+    var write="The quote is " + "'" + quote + "' " + "by " + " '" + author + "'" + document.write('<br/>');
+    var t=document.createTextNode(write);
+        document.body.appendChild(t);
+    }
+</script>
+</body>
+</html>
