@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Magic8Ball</title>
+</head>
+<body>
+    What's your question?
+<input type="text" placeholder="Enter a question"/>
+<button type="button" id="answerButton">Answer me</button>
+<p id="answerContainer"></p>
+
+<script>
+    var answers=['Yes.', 'No.', 'Maybe.', 'Ask again later.'];
+    document.getElementById('answerButton').onclick=function answerMe () {
+        var answer=answers[Math.floor(Math.random() * answers.length)];
+        document.getElementById('answerContainer').innerHTML=answer;
+    }
+</script>
+</body>
+</html>

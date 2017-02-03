@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Changing Meth</title>
+    <script type="text/javascript" src="Jquery%20File/jquery-3.1.1.min.js"></script>
+
+    <style>
+        .somethingWithClickEvent{
+            background-color: yellow;
+            width: 80px;
+            padding: 5px;
+            font-size: 16pt;
+        }
+    </style>
+</head>
+<body>
+    <div>Click Me</div>
+    <div>Click Me</div>
+    <div>Click Me</div>
+    <div>Click Me</div>
+    <div>Click Me</div>
+
+<script type="text/javascript">
+          $('div')
+        .addClass('somethingWithClickEvent')
+        .click(function () {
+            alert('You clicked a div!');
+        });
+</script>
+</body>
+</html>

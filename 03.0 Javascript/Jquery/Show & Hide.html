@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show and Hide</title>
+    <script type="text/javascript" src="Jquery%20File/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+    <button id="hideButton">Hide</button>
+    <button id="showButton">Show</button>
+    <div id="something" style="width: 150px; margin: 10px; background: red">
+    Something to Hide</div>
+<script type="text/javascript">
+    $("#showButton").hide();
+
+    $("#hideButton").click(function(){
+        $("#something").hide();
+        $("#hideButton").hide();
+        $("#showButton").show();
+    });
+
+    $("#showButton").click(function () {
+        $("#something").show();
+        $("#hideButton").show();
+        $("#showButton").hide();
+    });
+</script>
+</body>
+</html>

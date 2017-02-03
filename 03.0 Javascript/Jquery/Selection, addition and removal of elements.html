@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selection, Addition and Removal of Elements</title>
+    <script type="text/javascript" src="Jquery%20File/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<button id="addTextDynamicallyToColoredDivs">Click to add dinamically text to the colored divs</button>
+<button id="addTextDynamicallyToAllDivs">
+    Click to add dynamically text to all the divs
+</button>
+<button id="removeTags">
+    Click to remove all &lpar;&GT; tags
+</button>
+<div class="someDiv 0" style="width: 700px; background: red">
+    Some text in a div tag
+</div>
+<div class="someDiv 1" style="width: 700px; background: green">
+    Some text in another div tag
+</div>
+<div class="someDiv 2" style="width: 700px; background: yellow">
+    Some text in yet another div tag
+</div>
+
+<script type="text/javascript">
+    $("#addTextDynamicallyToColoredDivs").click(function () {
+        $(".someDiv").append(
+            "<p>Dynamically added text only to colored divs</p>"
+        )
+    });
+    $("#addTextDynamicallyToAllDivs").click(function () {
+        $('<p>dynamically added text to all divs</p>').appendTo('div');
+    });
+    $("#removeTags").click(function () {
+        $('p').remove();
+    });
+</script>
+</body>
+</html>
