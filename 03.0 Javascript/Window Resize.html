@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Window Resize</title>
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="styles/large.css"/>
+    <script type="text/javascript">
+        function layoutHandler() {
+            var styleLink=document.getElementById('pagestyle');
+            if (window.innerWidth<900){
+                styleLink.setAttribute('href', "mobile.css");
+            }
+            else if (window.innerWidth <1200){
+                styleLink.setAttribute("href", "medium.css");
+            }
+            else{
+                styleLink.setAttribute("href", "large.css");
+            }
+        }
+
+        window.onresize=layoutHandler();
+    </script>
+</head>
+<body>
+    <div id="my_header"></div>
+<div id="my_menu">
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Staff</a>
+    <a href="#">Contact</a>
+</div>
+<div id="my_content">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aut corporis deserunt dolorem dolorum eos esse, in modi nulla, quibusdam saepe, suscipit unde. Aliquid nesciunt, quibusdam quis ratione rerum tempora?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam, dicta eligendi excepturi iste maxime natus perferendis ratione rerum soluta voluptatem voluptates. Animi consequatur fugit iure sed similique sunt veniam?
+</div>
+</body>
+</html>

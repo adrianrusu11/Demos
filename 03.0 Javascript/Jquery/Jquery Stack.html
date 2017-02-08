@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery Stack</title>
+    <style>
+        .redBackgroundClass{
+            background: red;
+        }
+        .greenForegroundClass{
+            color:green;
+        }
+    </style>
+    <script type="text/javascript" src="Jquery%20File/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+    <p>some &lt;p&gt; with<a>some &lt;a&gt;</a></p>
+    <p>some &lt;p&gt; with<a>some &lt;a&gt;</a></p>
+    <p>some &lt;p&gt; with<a>some &lt;a&gt;</a></p>
+    <p>some &lt;p&gt; with<a>some &lt;a&gt;</a></p>
+    <p>some &lt;p&gt; with<a>some &lt;a&gt;</a></p>
+    <p>some &lt;p&gt; with<a>some &lt;a&gt;</a></p>
+    <p>some &lt;p&gt; with<a>some &lt;a&gt;</a></p>
+    <p>some &lt;p&gt; with<a>some &lt;a&gt;</a></p>
+
+<script type="text/javascript">
+    $('body')
+        .find('p')
+            .find('a')
+              .addClass('redBackgroundClass')
+        .end()
+            .addClass('greenForegroundClass')
+        .end()
+</script>
+</body>
+</html>
