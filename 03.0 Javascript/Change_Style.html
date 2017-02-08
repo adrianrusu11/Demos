@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Change Style</title>
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="styles/default.css"/>
+    <script type="text/javascript">
+        function swapStyleSheet(sheet) {
+            document.getElementById('pagestyle').setAttribute('href', sheet);
+        }
+
+        /* De modificat folosing liste*/
+    </script>
 </head>
 <body>
-
+    <div>
+        <h2>
+            Change Stylesheet
+        </h2>
+        <button onclick="swapStyleSheet('styles/yellow.css')">Yellow</button>
+        <button onclick="swapStyleSheet('styles/blue.css')">Blue</button>
+        <button onclick="swapStyleSheet('styles/default.css')">Default</button>
+    </div>
 </body>
 </html>
+
+
