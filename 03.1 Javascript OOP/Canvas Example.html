@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript APIs - Simple Canvas</title>
+</head>
+<body>
+    <canvas id="main-canvas" width="500" height="500">
+        Canvas is not supported
+    </canvas>
+<script type="text/javascript">
+    var canvas=document.getElementById("main-canvas");
+    var ctx=canvas.getContext("2d");
+
+    ctx.fillStyle="rgb(23,133,233)";
+    ctx.strokeStyle="rgb(233,133,33)";
+
+    ctx.lineWidth=15;
+    ctx.fillRect(10,10,150,150);
+    ctx.strokeRect(10,10,150,150);
+
+</script>
+</body>
+</html>
