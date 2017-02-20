@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiplication table</title>
+    <style>
+        td{
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body onload="tableCreate()">
+
+<script>
+    function tableCreate() {
+
+        var body = document.getElementsByTagName("body")[0];
+        var td = document.getElementsByTagName("td");
+
+
+
+        var tbl     = document.createElement("table");
+        var tblBody = document.createElement("tbody");
+
+
+        for (var j = 0; j <= 12; j++) {
+
+            var row = document.createElement("tr");
+            var cell1h = row.insertCell(0);
+            cell1h.innerHTML=(j);
+
+            for (var i = 0; i < 13; i++) {
+
+                var cell = document.createElement("td");
+                var cellText = document.createTextNode(j*i);
+
+                cell.appendChild(cellText);
+                row.appendChild(cell);
+            }
+
+            tblBody.appendChild(row);
+        }
+        var row1 = tblBody.insertRow(0);
+        for (var k = 0; k < 14; k++) {
+            var cell1 = row1.insertCell(k);
+            cell1.innerHTML=(k-1);
+        }
+
+        tbl.appendChild(tblBody);
+        body.appendChild(tbl);
+        tbl.setAttribute("border","1");
+        tbl.rows[0].cells[0].innerHTML=" ";
+    }
+</script>
+</body>
+</html>

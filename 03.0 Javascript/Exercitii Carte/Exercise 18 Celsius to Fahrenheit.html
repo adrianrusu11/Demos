@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 18 Celsius Fahrenheit</title>
+</head>
+<body>
+    <h3>Convert Celsius degrees into Fahrenheit degrees</h3>
+
+    <p>Insert a number: </p>
+<p><input id="celsius" onkeyup="convert ('Celsius')"/>:Celsius</p>
+    <p><input id="fahrenheit" onkeyup="convert ('Fahrenheit')"/>:Fahrenheit</p>
+
+<script>
+    function convert(degree) {
+        var x;
+        if(degree == "Celsius"){
+            x=document.getElementById("celsius").value * 9/5 +32;
+            document.getElementById("fahrenheit").value=Math.round(x);
+        }
+        else{
+            x=(document.getElementById("fahrenheit").value-32) *5/9;
+            document.getElementById("celsius").value=Math.round(x);
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+#wrapper, #main .top, #main .middle, #main .bottom{
+    width:730px;
+}
+.background{
+    width:728px;
+}
+.background .center{
+    width:718px;
+}
+.content{
+    width:540px;
+}
+.sidebar{
+    width:149px;
+}
+#main .middle{
+    background: url(../images/bckg-main.png) -1150px 0 repeat-y;
+}
+#main .top{
+    background: url(../images/bckg-main-top.png) -160px 0 no-repeat;
+}
+#main .bottom{
+    background: url(../images/bckg-main.png) -2140px 0 no-repeat;
+}
+
+.search select{
+    width:105px;
+    margin-right:2px;
+    font-size:11px;
+}
+
+.intro img{
+    width:215px;
+}
+.article{
+    width:260px;
+}
+.article .figure, .article img{
+    width: 252px;
+    height: 118px;
+}
+.sidebar .inputHolder{
+    float: left;
+}
+
+.sidebar .inputHolder + .inputHolder{
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+.sidebar .signTable{
+    float: left;
+    margin-top: -5px;
+}
+.sidebar input[name="email"], .sidebar input[name="name"]{
+    width:162px;
+}
+
+#footer ul, #footer p{
+    float: left;
+    margin-bottom: 10px;
+}

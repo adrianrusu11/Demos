@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess the number game</title>
+    <script type="text/javascript" src="../Jquery/Jquery%20File/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+    <button value="Play Again">Play</button>
+<p>Choose a level between 1 and 3: <input type="text" id="level"/> </p>
+<p>input your guess here <input type="text" id="inputNumber" value="0"/> </p>
+<div id="inner"></div>
+<p>Do you want to play again?</p>
+
+<script>
+    $(document).ready(function () {
+        var guesses=1
+        $("#inputNumber").change(function (ev) {
+            var level = $("#level").val()
+            if (level == 1) {
+                var randomNumber = Math.floor(Math.random() *10 )+1
+            }
+            if (level == 2){
+                var randomNumber = Math.floor(Math.random() *100)+1
+            }
+            if (level == 3){
+                var randomNumber = Math.floor(Math.random() *1000)+1
+        }
+        var number=$("#inputNumber").val()
+
+            if (number < randomNumber) {
+            $ ("inner").append("<p> Too low your number of guesses are: " + guesses + "</p>")
+            guesses=guesses+1
+            }
+            if (number == randomNumber){
+                $( "#inner").append("<p>You got it in: " + guesses + "guesses" + "</p>")
+            }
+        });
+
+    });
+</script>
+</body>
+</html>

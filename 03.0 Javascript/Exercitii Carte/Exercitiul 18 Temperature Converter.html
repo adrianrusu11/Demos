@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blood alchool calculator</title>
+    <style>
+        .div{
+            width: 330px;
+            text-align: center;
+            border: 2px solid green;
+            background-color: lightyellow;
+            border-radius:5px;
+            padding: 10px;
+            margin: 60px auto;
+        }
+
+        input,select {
+            width: 100%;
+            padding: 12px 12px;
+            margin: 10px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius:10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="div">
+    <p>Select convertion type</p>
+    <select id="sel">
+        <option></option>
+        <option>Fahrenheit to Celsius</option>
+        <option>Celsius to Fahrenheit</option>
+    </select><br/>
+
+    <label for="inp" id="inpl">Enter the temperature</label>
+    <input type="text" id="inp"><br>
+
+
+    <button onclick="myFunction()">Show Temp </button>
+
+    <p id="demo"></p>
+</div>
+
+<script>
+
+    function myFunction() {
+        var selectval=document.getElementById("sel").selectedIndex;
+        var tempinit=document.getElementById("inp").value;
+        var temp=0;
+        if (selectval==1) {
+            temp=(tempinit-32)*(5/9);
+            document.getElementById("demo").innerHTML = "The temperature in Celsius is :"+temp;
+        }
+        else if (selectval==2) {
+            temp=(tempinit*(9/5))+32;
+            document.getElementById("demo").innerHTML = "The temperature in Fahrenheit is :"+temp;
+        }
+        else {
+            document.getElementById("demo").innerHTML = "Chose an option";
+        }
+
+
+    }
+</script>
+
+</div>
+</body>
+</html>
