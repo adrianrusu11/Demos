@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geolocation</title>
+</head>
+<body>
+<script>
+    function geoSuccess(position) {
+        console.log("latitude: " + position.coords.latitude);
+        console.log("longitude: " + position.coords.longitude);
+    }
+
+    function geoError() {
+        console.log(arguments);
+    }
+
+    navigator.geolocation.getCurrentPosition(geoSuccess, geoError);
+</script>
+</body>
+</html>

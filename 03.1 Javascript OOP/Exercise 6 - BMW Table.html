@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 6 BMW Table</title>
+
+    <script>
+        function uncheck(){
+            var bmw=document.getElementById("bmw");
+            var mercedes=document.getElementById("mercedes");
+            var audi=document.getElementById("audi");
+            var none=document.getElementById("none");
+
+            if(bmw.checked==true & mercedes.checked==true & audi.checked==true){
+                bmw.checked=false;
+                mercedes.checked=false;
+                audi.checked=false;
+            }
+        }
+        function onpush(){
+            if (bmw.checked==true){
+                window.alert("BMW");
+            }
+        }
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        function () {
+
+        }
+    </script>
+<table border="1" width="600">
+    <tr>
+        <td colspan="2" align="center"><strong>What car brands are in this image?</strong></td>
+    </tr>
+    <tr>
+        <td><img src="http://www.bmw.ro/content/dam/bmw/common/home/teaser/BMW-5series-sedan-home-teaser-s2-XXL-desktop.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1476370052435.jpg"/></td>
+        <td>
+            <table>
+                <tr>
+                    <td>
+                        <form id="myform">
+                            <input type="checkbox" id="bmw"/>BMW<br/>
+                            <input type="checkbox" id="mercedes"/>Mercedes<br/>
+                            <input type="checkbox" id="audi"/>Audi<br/>
+                            <input type="checkbox" onclick="uncheck();" id="none"/>None<br/>
+                        </form>
+                        <br/><br/><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="Show result" onclick="onpush()"/><br/>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

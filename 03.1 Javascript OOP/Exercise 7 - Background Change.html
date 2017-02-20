@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 7 - Background Change</title>
+</head>
+<body>
+    <p> Standard: Mouse over me</p>
+<p>On mouse over: <span id="over" onmouseover="overme()" onmouseout="outme()">Mouse over me</span></p>
+
+<script>
+    function overme() {
+        var mytext=document.getElementById("over");
+        mytext.style.backgroundColor="red";
+    }
+    function outme() {
+        mytext.style.backgroundColor="white";
+    }
+</script>
+</body>
+</html>

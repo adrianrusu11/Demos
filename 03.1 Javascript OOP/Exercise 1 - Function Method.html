@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 1  - Function Methods</title>
+</head>
+<body>
+    <script>
+        var i,n;
+        var min=0;
+
+        n=parseInt(prompt("Enter array size"));
+        var a=new Array(n);
+
+        for (i=0; i<n; i++)
+        {
+            a[i]=parseInt(prompt("Enter numbers"));
+        }
+
+        min=a[0];
+        for(i=0;i<n;i++){
+            if(min>a[i])
+                min=a[i];
+        }
+        document.write("Minimum Number is = " +min + "<br/>");
+    </script>
+</body>
+</html>

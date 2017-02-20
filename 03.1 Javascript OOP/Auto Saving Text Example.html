@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Auto Saving Text Example</title>
+</head>
+<body>
+    <textarea id="ta" rows="20" cols="20"></textarea>
+<textarea id="savedTextArea" rows="20" cols="20"></textarea>
+
+<script type="text/javascript">
+    document.querySelector("#ta").
+    addEventListener("keyup", function (e) {
+        document.getElementById("savedTextArea").value=this.value;
+    }, false);
+
+</script>
+</body>
+</html>

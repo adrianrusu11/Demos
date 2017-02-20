@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        div{
+            margin: 15px;
+            display: inline;
+            text-align: justify;
+        }
+
+        #toSelect{
+            border: 1px solid Green;
+        }
+
+        #selectedText{
+            border: 1px solid Blue;
+        }
+
+        #selectedText, #toSelect{
+            width:40%;
+            float: left;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Dom-Extensions</title>
+</head>
+<body onmouseup="mouseUp()" onmousedown="mouseDown()">
+<div id="toSelect" onclick="mouseDown()" onmouseup="mouseUp()" onmouseout="mouseMove()">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, blanditiis cupiditate dolorem eos, impedit inventore, iste iusto laboriosam maxime nam nihil perspiciatis qui quis similique sint tempore vitae voluptatibus? Consequuntur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deserunt facere ipsum, magnam nam optio praesentium recusandae rem voluptatem. Consectetur exercitationem expedita explicabo ipsa modi natus nesciunt perspiciatis reiciendis repudiandae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam reiciendis, sed? Alias debitis dolorem doloremque doloribus eligendi excepturi, incidunt, minima, mollitia natus officia quis quos sed similique soluta voluptates voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam expedita iste mollitia odio recusandae, rem reprehenderit sit tempora tempore vitae. Alias, amet enim eos ipsum minima nulla porro quo ullam!</div>
+
+<div id="selectedText"></div>
+
+<script type="text/javascript">
+    isMouseUp=false;
+    function mouseDown() {
+        isMouseUp=true;
+    }
+    function mouseUp() {
+        isMouseUp=false;
+    }
+    function mouseMove() {
+        if (isMouseUp){
+            document.getElementById("selectedText").innerHTML=window.getSelection();
+        }
+    }
+</script>
+</body>
+</html>
