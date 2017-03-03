@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI Calculator</title>
+</head>
+<body>
+<input type="number" id="weight" placeholder="Enter weight here in Kg"/>
+<input type="number" id="height" placeholder="Enter height here in m"/>
+<button type="button" onclick="BMI_Calculator()">Find out BMI</button>
+<p id="output"></p>
+    <script>
+        function BMI_Calculator() {
+            var height=document.getElementById("height").value;
+            var weight=document.getElementById("weight").value;
+            var bmi=weight/(height*height);
+            document.getElementById("output").innerHTML="Your BMI is " + Math.round(bmi);
+        }
+    </script>
+
+</body>
+</html>
