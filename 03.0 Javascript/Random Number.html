@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Number</title>
+</head>
+<body>
+<p id="random"></p>
+<button onclick="random()">Random Number</button>
+<p id="highestNumber"></p>
+<button onclick="number()">Highest Number</button>
+<p id="round"></p>
+<button onclick="round()">Round Button</button>
+<p id="squareRoot"></p>
+<button onclick="radical()">Radical</button>
+<script>
+    function random() {
+        document.getElementById("random").innerHTML=Math.random();
+    }
+    function number(){
+        document.getElementById("highestNumber").innerHTML=Math.max(0, 150, 30, 100, -8);
+    }
+    function round() {
+        document.getElementById("round").innerHTML=Math.round(5.3);
+    }
+    function radical() {
+        document.getElementById("squareRoot").innerHTML=Math.sqrt(9);
+    }
+</script>
+</body>
+</html>

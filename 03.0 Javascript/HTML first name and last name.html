@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First name and last name exercitiu</title>
+</head>
+<body>
+
+    <form method="POST" action="#" onsubmit="return checkForm(this);">
+        <p>Input:<input type="text" size="32" name="inputfield"/> <input type="submit"/></p>
+    </form>
+<!--inputfield, must: a) not be empty; and b) contain only alphanumeric characters and spaces; only if both tests are passed the form will be submitted(when the script returns a value of true). -->
+<script>
+    function checkForm (form){
+        //validation fails if the input is blank
+        if(form.inputfield.value==""){
+            alert("Error: Input is empty!");
+            form.inputfield.focus();
+            return false;
+        }
+        var re=/^[\w]+$/;
+
+        if(!re.test(form.inputfield.value)){
+            alert("Error: Input contains invalid characters!");
+            form.inputfield.focus();
+            return false;
+        }
+        return true;
+    }
+</script>
+</body>
+</html>

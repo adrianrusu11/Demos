@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Div</title>
+    <script>
+        function randomDIV() {
+            var xSize=300;
+            var ySize=300;
+
+            var xCoord=Math.floor(Math.random()*xSize);
+            var yCoord=Math.floor(Math.random()*ySize);
+
+            var xCoordStr=xCoord.toString() + "px";
+            var yCoordStr=yCoord.toString() + "px";
+
+            document.getElementById("randomPos").style.left=xCoordStr;
+            document.getElementById("randomPos").style.top=yCoordStr;
+        }
+    </script>
+</head>
+<body onload="randomDIV()">
+    <div style="position:absolute; border: 1px solid red" id="randomPos">
+        <p>Random Placement if DIV</p>
+    </div>
+</body>
+</html>

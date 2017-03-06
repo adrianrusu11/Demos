@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function hello() {
+            var name=document.getElementById("name").value;
+            var greeting="Noroc " + name + ", care-i treaba?";
+            console.log(greeting);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" id="name" name="name"/>
+        <input type="button" value="SayHello" onclick="hello()"/>
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza la Oameni</title>
+</head>
+<body>
+    <script>
+        /*
+        *pizzaParty
+        * Prompt for how many people
+        * Prompt for how many pizzas
+        * Prompt for how many slices the pizzas have*/
+
+        var people=window.prompt("How many people?");
+        var pizzas=window.prompt("How many pizzas do you have?");
+        var slices=window.prompt("How many slices does each pizza have?");
+
+        var product=(pizzas*slices);
+        var quotient=(product/people);
+        var remainder=(product % people);
+        console.log(people, "people with", pizzas, "pizzas\n", "Each person gets", quotient, "pieces of pizza\n", "There are", remainder, "leftover pizza");
+    </script>
+</body>
+</html>

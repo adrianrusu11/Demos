@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    function showT() {
+        var textF=document.getElementById("fname").value + " ";
+        var textL = document.getElementById("lname").value + " ";
+        var date=new Date().toDateString();
+        document.getElementById("fname").value=textF + date;
+        document.getElementById("lname").value=textL + date;
+        var email=document.getElementById("email").value;
+        var filter=/^([\w-]+(?:\.[\w-]+)*)@((?:[/w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+        if (!filter.test(email)){
+            window.alert ("Please input a valid email address!");
+        }
+        else{
+            window.alert("Thank you!");
+        }
+        document.getElementById("formFT").reset();
+    }
+</script>
+    <form id="formFT">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname" value="" style="display: block"/>
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname" value="" style="display: block"/>
+        <label for="email">E-mail</label>
+        <input type="text" name="email" id="email" value="" style="display: block"/><br/>
+        <input type="button" value="Send" onclick="showT()"/>
+    </form>
+
+
+</body>
+</html>

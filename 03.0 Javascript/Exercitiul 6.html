@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercitiu Miscare DIV</title>
+    <style>
+        #divEl{
+            position: absolute;
+            left:5px;
+            top:5px;
+            width:60px;
+            background: #99ccff;
+            border:1px solid #003366;
+            white-space:nowrap;
+            padding: 5px;
+        }
+    </style>
+    <script>
+        var el;
+        function doMove() {
+            el.style.left=parseInt(el.style.left)+5+'px';
+            setTimeout(doMove,20);//call doMove in 20msec
+
+            if(el.style.left=='600px'){
+                el.style.left='5px';
+            }
+        }
+        function init(){
+            el=document.getElementById('divEl');
+            el.style.left='0px';
+            doMove();
+        }
+
+        window.onload=init;
+    </script>
+</head>
+<body>
+    <div id="divEl">I am DIV.</div>
+</body>
+</html>

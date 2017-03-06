@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercitii</title>
+</head>
+<body>
+    <p id="date"></p>
+    <p id="dateString"></p>
+    <p id="dateObject"></p>
+<script>
+    var d=new Date();
+    document.getElementById("date").innerHTML=d;
+    document.getElementById("dateString").innerHTML=d.toDateString();
+    var c = new Date(2015,0,10,10,0,0,0);
+    var e=c.toString();
+    var f=e.substring(3, 15);
+    var g=e.substring(16, 25);
+    document.getElementById("dateObject").innerHTML=f + ", " + g;
+</script>
+<p id="dataSiOra"></p>
+<script>
+    function addZero(i) {
+        if (i<10){
+            i="0"+i;
+        }
+        return i;
+    }
+    var datec=new Date(2015,0,10,10,0,0).toDateString();
+    var date=datec.substr(3,12);
+    var hour=new Date(2015,0,10,10,0,0).getHours();
+    var minutes=new Date(2015,0,10,10,0,0).getMinutes();
+    var seconds=new Date(2015,0,10,10,0,0).getSeconds();
+    document.getElementById("dataSiOra").innerHTML=date+ ", "+ hour +":" + addZero(minutes)+":" + addZero(seconds);
+</script>
+</body>
+</html>

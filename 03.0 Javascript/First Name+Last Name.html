@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First Name and Last Name</title>
+    <script>
+        function theText() {
+            var x=new Date();
+            var a=x.toString();
+            document.getElementById("first").innerHTML="the text " + a;
+            document.getElementById("last").innerHTML="the text " + a;
+        }
+    </script>
+</head>
+<body>
+<form>
+    <p id="first">First Name:<input style="width: 500px" type="text" id="fName"/></p>
+    <p id="last">Last Name:<input style="width: 500px" type="text" id="lName"/></p>
+    <button onclick="theText()">Push IT!!!</button>
+</form>
+
+</body>
+</html>

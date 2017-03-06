@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza la oameni</title>
+</head>
+<body>
+        <label>Nr de Pizza</label>
+        <input id="pizza" type="text"/>
+        <label>Nr de Oameni</label>
+        <input id="oameni" type="text"/>
+        <label>Felii de pizza per pizza</label>
+        <input id="feliiPerPizza"/><br/><br/>
+        <button onclick="PizzaBun()">Calculeaza</button>
+        <label>Felii de pizza de caciula</label>
+        <input id="feliiDeFiecare" type="text"/>
+        <label>Felii de pizza ramase</label>
+        <input id="feliiRamase" type="text"/>
+
+
+    <script>
+        function PizzaBun() {
+            var pizza=document.getElementById("pizza").value;
+            var oameni=document.getElementById("oameni").value;
+            var feliiPerPizza=document.getElementById("feliiPerPizza").value;
+            var totalFelii=(pizza*feliiPerPizza);
+            var feliiDeOm=(totalFelii / oameni);
+            var quotient=(totalFelii%oameni);
+            document.getElementById("feliiDeFiecare").value=feliiDeOm;
+            document.getElementById("feliiRamase").value=quotient;
+        }
+
+    </script>
+</body>
+</html>

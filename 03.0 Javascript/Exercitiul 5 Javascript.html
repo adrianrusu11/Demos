@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function hideDIV() {
+            document.getElementById("smenu").style.display="none";
+        }
+        function showDIV() {
+            document.getElementById("smenu").style.display="block";
+        }
+    </script>
+    <style type="text/css">
+        td{
+            background: #71FFFD;
+            border: 2px solid #97A2F3;
+            color: #C07885;
+        }
+        a{
+            padding-left: 10px;
+            display: block;
+            width:85px;
+            background: #FFFC74;
+            border: 2px solid #2F2E15;
+            color: #CC936B;
+        }
+        #smenu{
+            position:absolute;
+            top:35px;
+            left:90px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Block One</td>
+            <td id="menu" onmouseover="showDIV()" onmouseout="hideDIV()">Block two</td>
+        </tr>
+    </table>
+<div id="smenu" onmouseover="showDIV()" onmouseout="hideDIV()">
+    <a href="http://www.yahoo.com">Yahoo</a>
+    <a href="http://www.yahoo.ro">Yahoo RO</a>
+    <a href="http://www.yahoo.de">Yahoo DE</a>
+    <a href="#" onclick="hideDIV()">Close</a>
+</div>
+</body>
+</html>
